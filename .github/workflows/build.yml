@@ -23,10 +23,10 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_15.1.app/Contents/Developer
 
       - name: Compile palera1nLoaderTV
-        run: make PLATFORM=appletvos SCHEME=palera1nLoaderTV package
+        run: make PLATFORM=appletvos SCHEME=palera1nLoaderTV package TIPA=1
 
       - name: Compile palera1nLoader
-        run: make PLATFORM=iphoneos SCHEME=palera1nLoader package
+        run: make PLATFORM=iphoneos SCHEME=palera1nLoader package TIPA=1
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
